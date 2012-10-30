@@ -1,0 +1,20 @@
+create keyspace udadevdemo;
+
+use udadevdemo;
+
+create column family tipoProblema 
+	with key_validation_class = 'UTF8Type'
+	and comparator = 'UTF8Type'
+	and default_validation_class = 'UTF8Type';
+	  		
+set tipoProblema[1001][id_tipo_problema] = 1;
+set tipoProblema[1001][nombre] = 'Problemas de Vialidad';	
+
+set tipoProblema[2002][id_tipo_problema] = 2;
+set tipoProblema[2002][nombre] = 'Problemas de Infraestructura';
+
+set tipoProblema[3003][id_tipo_problema] = 3;
+set tipoProblema[3003][nombre] = 'Problemas de Sanidad';
+
+update column family tipoProblema with comparator=UTF8Type
+	and column_metadata=[{column_name: id_tipo_problema, validation_class: UTF8Type, index_type: KEYS}];

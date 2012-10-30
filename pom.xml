@@ -1,0 +1,54 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>udadevdemo</groupId>
+    <artifactId>UDADevDemo</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>UDADevDemo</name>
+    <url>http://maven.apache.org</url>
+    <repositories>
+        <repository>
+            <url>http://repo1.maven.org/maven2/</url>
+            <id>swing-layout</id>
+            <layout>default</layout>
+            <name>Repository for library Library[swing-layout]</name>
+        </repository>
+    </repositories>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>            
+            
+        <!-- DEPENDENCIAS MOTORES NO SQL -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.9.1</version>
+        </dependency>            
+    
+        <dependency>
+            <groupId>org.apache.cassandra</groupId>
+            <artifactId>cassandra-thrift</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+        
+        <!-- DEPENDENCIAS UTILITARIAS -->
+        <dependency>
+            <groupId>org.swinglabs</groupId>
+            <artifactId>swing-layout</artifactId>
+            <version>1.0.3</version>
+        </dependency>       
+        
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+        
+    </dependencies>
+</project>
