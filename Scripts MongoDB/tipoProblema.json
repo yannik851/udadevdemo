@@ -1,0 +1,3 @@
+{ "_id" : { "$oid" : "508e4ad35ec282113f67b8bd" }, "id_tipo_problema" : 1, "nombre" : "Probkemas Sanitarios" }
+{ "_id" : { "$oid" : "508e4ae75ec282113f67b8be" }, "id_tipo_problema" : 2, "nombre" : "Problemas En Obras Civiles" }
+{ "_id" : { "$oid" : "508e4af35ec282113f67b8bf" }, "id_tipo_problema" : 3, "nombre" : "Problemas Viales" }
